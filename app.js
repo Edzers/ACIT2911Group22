@@ -6,6 +6,8 @@ const path = require('path');
 const { async } = require("regenerator-runtime");
 app.use(express.static(__dirname));
 
+server.listen(process.env.PORT || 5000)
+
 app.get('/', async (req, res) => {
     res.sendFile(path.join(__dirname, 'homepage.html'));
   });
@@ -16,11 +18,5 @@ app.get('/', async (req, res) => {
 
 
 var server = http.createServer(app);
-
-server.listen(3000);
-
-server.listen(PORT, function() {
-  console.log('Server running');
-});
 
 module.exports = server;
