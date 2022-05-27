@@ -13,9 +13,9 @@ app.listen(port, host, function() {
   console.log("Server started.......");
 });
 
-app.get('/', async (req, res) => {
-  res.sendFile(path.join(__dirname, 'homepage.html'));
-});
+//app.get('/', async (req, res) => {
+  //res.sendFile(path.join(__dirname, 'homepage.html'));
+//});
 
 app.get('/', async (req, res)=>  {
     res.sendFile(path.join(__dirname, 'To-Do.html'));
