@@ -13,7 +13,7 @@ app.listen(port, host, function() {
   console.log("Server started.......");
 });
 
-app.get('/to-do-list', async (req, res)=>  {
+app.get('/', async (req, res)=>  {
     res.sendFile(path.join(__dirname, 'To-Do.html'));
   });
 
