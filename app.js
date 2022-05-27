@@ -1,4 +1,5 @@
 const PORT = process.env.PORT || 5000;
+app.listen(process.env.PORT);
 var express = require("express");
 var app = express();
 var http = require("http");
