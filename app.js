@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
     res.sendFile(path.join(__dirname, 'homepage.html'));
   });
 
-  app.get('/to-do-list', async (req, res)=>  {
+app.get('/to-do-list', async (req, res)=>  {
     res.sendFile(path.join(__dirname, 'To-Do.html'));
   });
 
