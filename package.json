@@ -29,7 +29,7 @@
     "mocha": "^10.0.0",
     "nodemon": "^2.0.16",
     "package-name": "^0.1.0",
-    "react": "^18.1.0",
+    "react": "^16.4.0-0",
     "regenerator-runtime": "^0.13.9",
     "save": "^2.5.0"
   },
