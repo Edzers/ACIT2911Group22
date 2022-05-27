@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 5000;
 var express = require("express");
 var app = express();
 var http = require("http");
@@ -17,5 +18,9 @@ app.get('/', async (req, res) => {
 var server = http.createServer(app);
 
 server.listen(3000);
+
+server.listen(PORT, function() {
+  console.log('Server running');
+});
 
 module.exports = server;
